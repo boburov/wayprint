@@ -4,7 +4,7 @@ import Image from "next/image";
 
 type CardProps = {
   title: string;
-  image: string;
+  image: any;
   rate: number | string;
   amout: number | string;
 };
