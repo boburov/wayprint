@@ -1,14 +1,23 @@
-import Image from "next/image"
+// app/components/Card.tsx
 
-const Card = ({ title, image, rate, amout }) => {
-    return (
-        <div className="text-xl border border-gray-400 rounded-md p-5">
-            <Image src={image} alt={title} />
-            <h1 className="text-base">{title}</h1>
-            <p>{rate}</p>
-            <p>{amout}</p>
-        </div>
-    )
-}
+import Image from "next/image";
 
-export default Card
+type CardProps = {
+  title: string;
+  image: string;
+  rate: number | string;
+  amout: number | string;
+};
+
+const Card = ({ title, image, rate, amout }: CardProps) => {
+  return (
+    <div className="text-xl border border-gray-400 rounded-md p-5">
+      <Image src={image} alt={title} width={200} height={200} />
+      <h1 className="text-base">{title}</h1>
+      <p>{rate}</p>
+      <p>{amout}</p>
+    </div>
+  );
+};
+
+export default Card;
