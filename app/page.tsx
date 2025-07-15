@@ -17,7 +17,7 @@ const page = () => {
       <br />
       <br />
       <div className="grid grid-cols-4 container">
-        <Card title="Naruto fudbolka" rate={5} amout={1000000} image={tshirt} />
+        <Card title="Naruto fudbolka" rate={5} amout={1000000} image={String(tshirt)} />
       </div><br />
       <br />
     </div>
