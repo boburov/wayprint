@@ -1,8 +1,6 @@
 import React from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import Card from './components/Card'
-import tshirt from './images/Untitled design (1).png'
 
 const page = () => {
   return (
@@ -17,7 +15,6 @@ const page = () => {
       <br />
       <br />
       <div className="grid grid-cols-4 container">
-        {/* <Card title="Naruto fudbolka" rate={5} amout={1000000} image={String(tshirt)} /> */}
       </div><br />
       <br />
     </div>
