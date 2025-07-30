@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'releway-ex';
+  src: url('./fonts/Raleway-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "releway-sm";   
+  src: url("./fonts/Raleway-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "railway-rg";   
+  src: url("./fonts/Raleway-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "railway-lg";   
+  src: url("./fonts/Raleway-Light.ttf") format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    120deg,
+    #dbece8 0%,
+    #b3c9b6 30%,
+    #d7e2d2 60%,
+    #ddebdb 100%
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1f2937; 
+}
+
+.container{
+  @apply w-full max-w-7xl px-4 mx-auto
+}
+
+.releway-ex{
+  font-family: releway-ex;
+}
+
+.releway-sm{
+  font-family: releway-sm;
+}
+
+.releway-rg{
+  font-family: releway-rg;
+}
+
+.releway-lg{
+  font-family: releway-lg;
+}
